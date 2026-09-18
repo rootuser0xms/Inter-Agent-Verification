@@ -1,0 +1,2557 @@
+{
+  "cases": [
+    {
+      "case_id": "B_pos_1",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of kidney disease."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with kidney disease. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on magnesium disodium EDTA for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "B",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "condition": "kidney disease",
+        "drug": "magnesium disodium EDTA",
+        "relation": "has_contraindicated_drug"
+      }
+    },
+    {
+      "case_id": "B_pos_2",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of kidney disease."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with kidney disease. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on midodrine hydrochloride for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "B",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "condition": "kidney disease",
+        "drug": "midodrine hydrochloride",
+        "relation": "has_contraindicated_drug"
+      }
+    },
+    {
+      "case_id": "B_neg_3",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of kidney disease."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with kidney disease. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on acetaminophen for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "condition": "kidney disease",
+        "drug": "acetaminophen",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "C_pos_4",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "No evidence of kidney disease on initial presentation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Further workup ordered to clarify clinical picture."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Assessment: Disorder of kidney and/or ureter. Proceeding with management plan accordingly."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "C",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "broad_condition": "kidney disease",
+        "narrow_condition": "Disorder of kidney and/or ureter",
+        "relation": "isa"
+      }
+    },
+    {
+      "case_id": "B_pos_5",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of type 2 diabetes mellitus."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with type 2 diabetes mellitus. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on eplerenone for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "B",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "condition": "type 2 diabetes mellitus",
+        "drug": "eplerenone",
+        "relation": "has_contraindicated_drug"
+      }
+    },
+    {
+      "case_id": "B_neg_6",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of type 2 diabetes mellitus."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with type 2 diabetes mellitus. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on acetaminophen for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "condition": "type 2 diabetes mellitus",
+        "drug": "acetaminophen",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "B_pos_7",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of congestive heart failure."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with congestive heart failure. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on verapamil hydrochloride for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "B",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "condition": "congestive heart failure",
+        "drug": "verapamil hydrochloride",
+        "relation": "has_contraindicated_drug"
+      }
+    },
+    {
+      "case_id": "B_pos_8",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of congestive heart failure."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with congestive heart failure. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on sodium lactate for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "B",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "condition": "congestive heart failure",
+        "drug": "sodium lactate",
+        "relation": "has_contraindicated_drug"
+      }
+    },
+    {
+      "case_id": "B_neg_9",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of congestive heart failure."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with congestive heart failure. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on acetaminophen for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "condition": "congestive heart failure",
+        "drug": "acetaminophen",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "C_pos_10",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "No evidence of congestive heart failure on initial presentation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Further workup ordered to clarify clinical picture."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Assessment: Disorder of cardiac ventricle. Proceeding with management plan accordingly."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "C",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "broad_condition": "congestive heart failure",
+        "narrow_condition": "Disorder of cardiac ventricle",
+        "relation": "isa"
+      }
+    },
+    {
+      "case_id": "C_pos_11",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "No evidence of congestive heart failure on initial presentation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Further workup ordered to clarify clinical picture."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Assessment: Heart failure. Proceeding with management plan accordingly."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "C",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "broad_condition": "congestive heart failure",
+        "narrow_condition": "Heart failure",
+        "relation": "isa"
+      }
+    },
+    {
+      "case_id": "B_pos_12",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of hypertension."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with hypertension. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on brompheniramine tannate for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "B",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "condition": "hypertension",
+        "drug": "brompheniramine tannate",
+        "relation": "has_contraindicated_drug"
+      }
+    },
+    {
+      "case_id": "B_pos_13",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of hypertension."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with hypertension. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on tenecteplase for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "B",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "condition": "hypertension",
+        "drug": "tenecteplase",
+        "relation": "has_contraindicated_drug"
+      }
+    },
+    {
+      "case_id": "B_neg_14",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of hypertension."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with hypertension. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on acetaminophen for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "condition": "hypertension",
+        "drug": "acetaminophen",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "C_pos_15",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "No evidence of hypertension on initial presentation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Further workup ordered to clarify clinical picture."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Assessment: Disorder of cardiovascular system. Proceeding with management plan accordingly."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "C",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "broad_condition": "hypertension",
+        "narrow_condition": "Disorder of cardiovascular system",
+        "relation": "isa"
+      }
+    },
+    {
+      "case_id": "B_pos_16",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of asthma."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with asthma. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on hydrocodone tannate for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "B",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "condition": "asthma",
+        "drug": "hydrocodone tannate",
+        "relation": "has_contraindicated_drug"
+      }
+    },
+    {
+      "case_id": "B_pos_17",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of asthma."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with asthma. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on mugwort sage pollen extract for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "B",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "condition": "asthma",
+        "drug": "mugwort sage pollen extract",
+        "relation": "has_contraindicated_drug"
+      }
+    },
+    {
+      "case_id": "B_neg_18",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of asthma."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with asthma. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on acetaminophen for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "condition": "asthma",
+        "drug": "acetaminophen",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "B_pos_19",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of peptic ulcer disease."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with peptic ulcer disease. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on carbinoxamine maleate for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "B",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "condition": "peptic ulcer disease",
+        "drug": "carbinoxamine maleate",
+        "relation": "has_contraindicated_drug"
+      }
+    },
+    {
+      "case_id": "B_pos_20",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of peptic ulcer disease."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with peptic ulcer disease. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on chlorpheniramine for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "B",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "condition": "peptic ulcer disease",
+        "drug": "chlorpheniramine",
+        "relation": "has_contraindicated_drug"
+      }
+    },
+    {
+      "case_id": "B_neg_21",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of peptic ulcer disease."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with peptic ulcer disease. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on acetaminophen for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "condition": "peptic ulcer disease",
+        "drug": "acetaminophen",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "C_pos_22",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "No evidence of peptic ulcer disease on initial presentation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Further workup ordered to clarify clinical picture."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Assessment: Gastrointestinal ulcer. Proceeding with management plan accordingly."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "C",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "broad_condition": "peptic ulcer disease",
+        "narrow_condition": "Gastrointestinal ulcer",
+        "relation": "isa"
+      }
+    },
+    {
+      "case_id": "C_pos_23",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "No evidence of peptic ulcer disease on initial presentation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Further workup ordered to clarify clinical picture."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Assessment: Disorder of upper gastrointestinal tract. Proceeding with management plan accordingly."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "C",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "broad_condition": "peptic ulcer disease",
+        "narrow_condition": "Disorder of upper gastrointestinal tract",
+        "relation": "isa"
+      }
+    },
+    {
+      "case_id": "B_pos_24",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of liver cirrhosis."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with liver cirrhosis. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on ethinyl estradiol for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "B",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "condition": "liver cirrhosis",
+        "drug": "ethinyl estradiol",
+        "relation": "has_contraindicated_drug"
+      }
+    },
+    {
+      "case_id": "B_pos_25",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of liver cirrhosis."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with liver cirrhosis. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on azithromycin monohydrate for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "B",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "condition": "liver cirrhosis",
+        "drug": "azithromycin monohydrate",
+        "relation": "has_contraindicated_drug"
+      }
+    },
+    {
+      "case_id": "B_neg_26",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of liver cirrhosis."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with liver cirrhosis. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on acetaminophen for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "condition": "liver cirrhosis",
+        "drug": "acetaminophen",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "B_pos_27",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of pregnancy."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with pregnancy. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on varicella zoster immune globulin (human) for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "B",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "condition": "pregnancy",
+        "drug": "varicella zoster immune globulin (human)",
+        "relation": "has_contraindicated_drug"
+      }
+    },
+    {
+      "case_id": "B_pos_28",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of pregnancy."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with pregnancy. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on abiraterone acetate for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "B",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "condition": "pregnancy",
+        "drug": "abiraterone acetate",
+        "relation": "has_contraindicated_drug"
+      }
+    },
+    {
+      "case_id": "B_neg_29",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of pregnancy."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with pregnancy. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on acetaminophen for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "condition": "pregnancy",
+        "drug": "acetaminophen",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "B_pos_30",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of chronic obstructive pulmonary disease."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with chronic obstructive pulmonary disease. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on metipranolol for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "B",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "condition": "chronic obstructive pulmonary disease",
+        "drug": "metipranolol",
+        "relation": "has_contraindicated_drug"
+      }
+    },
+    {
+      "case_id": "B_pos_31",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of chronic obstructive pulmonary disease."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with chronic obstructive pulmonary disease. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on timolol for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "B",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "condition": "chronic obstructive pulmonary disease",
+        "drug": "timolol",
+        "relation": "has_contraindicated_drug"
+      }
+    },
+    {
+      "case_id": "B_neg_32",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of chronic obstructive pulmonary disease."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with chronic obstructive pulmonary disease. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on acetaminophen for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "condition": "chronic obstructive pulmonary disease",
+        "drug": "acetaminophen",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "C_pos_33",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "No evidence of chronic obstructive pulmonary disease on initial presentation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Further workup ordered to clarify clinical picture."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Assessment: Tracheobronchial disorder. Proceeding with management plan accordingly."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "C",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "broad_condition": "chronic obstructive pulmonary disease",
+        "narrow_condition": "Tracheobronchial disorder",
+        "relation": "isa"
+      }
+    },
+    {
+      "case_id": "C_pos_34",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "No evidence of chronic obstructive pulmonary disease on initial presentation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Further workup ordered to clarify clinical picture."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Assessment: Chronic disease of respiratory system. Proceeding with management plan accordingly."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "C",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "broad_condition": "chronic obstructive pulmonary disease",
+        "narrow_condition": "Chronic disease of respiratory system",
+        "relation": "isa"
+      }
+    },
+    {
+      "case_id": "B_pos_35",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of epilepsy."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with epilepsy. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on maprotiline hydrochloride for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "B",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "condition": "epilepsy",
+        "drug": "maprotiline hydrochloride",
+        "relation": "has_contraindicated_drug"
+      }
+    },
+    {
+      "case_id": "B_pos_36",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of epilepsy."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with epilepsy. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on maprotiline for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "B",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "condition": "epilepsy",
+        "drug": "maprotiline",
+        "relation": "has_contraindicated_drug"
+      }
+    },
+    {
+      "case_id": "B_neg_37",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of epilepsy."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with epilepsy. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on acetaminophen for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "condition": "epilepsy",
+        "drug": "acetaminophen",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "C_pos_38",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "No evidence of epilepsy on initial presentation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Further workup ordered to clarify clinical picture."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Assessment: Seizure disorder. Proceeding with management plan accordingly."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "C",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "broad_condition": "epilepsy",
+        "narrow_condition": "Seizure disorder",
+        "relation": "isa"
+      }
+    },
+    {
+      "case_id": "B_pos_39",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of gout."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with gout. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on pyrazinamide for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "B",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "condition": "gout",
+        "drug": "pyrazinamide",
+        "relation": "has_contraindicated_drug"
+      }
+    },
+    {
+      "case_id": "B_neg_40",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of gout."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with gout. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on acetaminophen for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "condition": "gout",
+        "drug": "acetaminophen",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "C_pos_41",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "No evidence of gout on initial presentation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Further workup ordered to clarify clinical picture."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Assessment: Inflammatory disorder. Proceeding with management plan accordingly."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "C",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "broad_condition": "gout",
+        "narrow_condition": "Inflammatory disorder",
+        "relation": "isa"
+      }
+    },
+    {
+      "case_id": "C_pos_42",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "No evidence of gout on initial presentation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Further workup ordered to clarify clinical picture."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Assessment: Disorder of purine metabolism. Proceeding with management plan accordingly."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "C",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "broad_condition": "gout",
+        "narrow_condition": "Disorder of purine metabolism",
+        "relation": "isa"
+      }
+    },
+    {
+      "case_id": "B_pos_43",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of migraine."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with migraine. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on fentanyl citrate for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "B",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "condition": "migraine",
+        "drug": "fentanyl citrate",
+        "relation": "has_contraindicated_drug"
+      }
+    },
+    {
+      "case_id": "B_pos_44",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of migraine."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with migraine. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on fentanyl hydrochloride for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "B",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "condition": "migraine",
+        "drug": "fentanyl hydrochloride",
+        "relation": "has_contraindicated_drug"
+      }
+    },
+    {
+      "case_id": "B_neg_45",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of migraine."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with migraine. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on acetaminophen for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "condition": "migraine",
+        "drug": "acetaminophen",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "C_pos_46",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "No evidence of migraine on initial presentation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Further workup ordered to clarify clinical picture."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Assessment: Vascular headache. Proceeding with management plan accordingly."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "C",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "broad_condition": "migraine",
+        "narrow_condition": "Vascular headache",
+        "relation": "isa"
+      }
+    },
+    {
+      "case_id": "B_pos_47",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of depression."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with depression. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on deserpidine for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "B",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "condition": "depression",
+        "drug": "deserpidine",
+        "relation": "has_contraindicated_drug"
+      }
+    },
+    {
+      "case_id": "B_neg_48",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of depression."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with depression. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on acetaminophen for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "condition": "depression",
+        "drug": "acetaminophen",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "B_pos_49",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of osteoporosis."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with osteoporosis. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on corticotropin for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "B",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "condition": "osteoporosis",
+        "drug": "corticotropin",
+        "relation": "has_contraindicated_drug"
+      }
+    },
+    {
+      "case_id": "B_pos_50",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of osteoporosis."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with osteoporosis. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on elagolix sodium for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "B",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "condition": "osteoporosis",
+        "drug": "elagolix sodium",
+        "relation": "has_contraindicated_drug"
+      }
+    },
+    {
+      "case_id": "B_neg_51",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of osteoporosis."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with osteoporosis. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on acetaminophen for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "condition": "osteoporosis",
+        "drug": "acetaminophen",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "B_neg_52",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of hypothyroidism."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with hypothyroidism. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on acetaminophen for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "condition": "hypothyroidism",
+        "drug": "acetaminophen",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "C_pos_53",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "No evidence of hypothyroidism on initial presentation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Further workup ordered to clarify clinical picture."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Assessment: Disorder of thyroid gland. Proceeding with management plan accordingly."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "C",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "broad_condition": "hypothyroidism",
+        "narrow_condition": "Disorder of thyroid gland",
+        "relation": "isa"
+      }
+    },
+    {
+      "case_id": "B_pos_54",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of atrial fibrillation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with atrial fibrillation. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on estetrol for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "B",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "condition": "atrial fibrillation",
+        "drug": "estetrol",
+        "relation": "has_contraindicated_drug"
+      }
+    },
+    {
+      "case_id": "B_pos_55",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of atrial fibrillation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with atrial fibrillation. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on digoxin for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "B",
+        "conflicting_hops": [
+          1,
+          3
+        ],
+        "condition": "atrial fibrillation",
+        "drug": "digoxin",
+        "relation": "has_contraindicated_drug"
+      }
+    },
+    {
+      "case_id": "B_neg_56",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient presents for evaluation. History of atrial fibrillation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Assessment consistent with atrial fibrillation. No acute complications noted at this time."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Recommend starting patient on acetaminophen for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "condition": "atrial fibrillation",
+        "drug": "acetaminophen",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "C_neg_57",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "No evidence of kidney disease on initial presentation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Further workup ordered to clarify clinical picture."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Assessment: liver cirrhosis. Proceeding with management plan accordingly."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "broad_condition": "kidney disease",
+        "narrow_condition": "liver cirrhosis",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "C_neg_58",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "No evidence of type 2 diabetes mellitus on initial presentation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Further workup ordered to clarify clinical picture."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Assessment: gout. Proceeding with management plan accordingly."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "broad_condition": "type 2 diabetes mellitus",
+        "narrow_condition": "gout",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "C_neg_59",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "No evidence of congestive heart failure on initial presentation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Further workup ordered to clarify clinical picture."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Assessment: liver cirrhosis. Proceeding with management plan accordingly."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "broad_condition": "congestive heart failure",
+        "narrow_condition": "liver cirrhosis",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "C_neg_60",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "No evidence of hypertension on initial presentation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Further workup ordered to clarify clinical picture."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Assessment: osteoporosis. Proceeding with management plan accordingly."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "broad_condition": "hypertension",
+        "narrow_condition": "osteoporosis",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "C_neg_61",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "No evidence of asthma on initial presentation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Further workup ordered to clarify clinical picture."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Assessment: type 2 diabetes mellitus. Proceeding with management plan accordingly."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "broad_condition": "asthma",
+        "narrow_condition": "type 2 diabetes mellitus",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "C_neg_62",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "No evidence of peptic ulcer disease on initial presentation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Further workup ordered to clarify clinical picture."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Assessment: kidney disease. Proceeding with management plan accordingly."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "broad_condition": "peptic ulcer disease",
+        "narrow_condition": "kidney disease",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "C_neg_63",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "No evidence of liver cirrhosis on initial presentation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Further workup ordered to clarify clinical picture."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Assessment: kidney disease. Proceeding with management plan accordingly."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "broad_condition": "liver cirrhosis",
+        "narrow_condition": "kidney disease",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "C_neg_64",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "No evidence of pregnancy on initial presentation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Further workup ordered to clarify clinical picture."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Assessment: gout. Proceeding with management plan accordingly."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "broad_condition": "pregnancy",
+        "narrow_condition": "gout",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "C_neg_65",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "No evidence of chronic obstructive pulmonary disease on initial presentation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Further workup ordered to clarify clinical picture."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Assessment: osteoporosis. Proceeding with management plan accordingly."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "broad_condition": "chronic obstructive pulmonary disease",
+        "narrow_condition": "osteoporosis",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "C_neg_66",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "No evidence of epilepsy on initial presentation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Further workup ordered to clarify clinical picture."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Assessment: type 2 diabetes mellitus. Proceeding with management plan accordingly."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "broad_condition": "epilepsy",
+        "narrow_condition": "type 2 diabetes mellitus",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "C_neg_67",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "No evidence of gout on initial presentation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Further workup ordered to clarify clinical picture."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Assessment: asthma. Proceeding with management plan accordingly."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "broad_condition": "gout",
+        "narrow_condition": "asthma",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "C_neg_68",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "No evidence of migraine on initial presentation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Further workup ordered to clarify clinical picture."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Assessment: epilepsy. Proceeding with management plan accordingly."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "broad_condition": "migraine",
+        "narrow_condition": "epilepsy",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "C_neg_69",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "No evidence of depression on initial presentation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Further workup ordered to clarify clinical picture."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Assessment: pregnancy. Proceeding with management plan accordingly."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "broad_condition": "depression",
+        "narrow_condition": "pregnancy",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "C_neg_70",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "No evidence of osteoporosis on initial presentation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Further workup ordered to clarify clinical picture."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Assessment: chronic obstructive pulmonary disease. Proceeding with management plan accordingly."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "broad_condition": "osteoporosis",
+        "narrow_condition": "chronic obstructive pulmonary disease",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "C_neg_71",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "No evidence of hypothyroidism on initial presentation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Further workup ordered to clarify clinical picture."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Assessment: type 2 diabetes mellitus. Proceeding with management plan accordingly."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "broad_condition": "hypothyroidism",
+        "narrow_condition": "type 2 diabetes mellitus",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "C_neg_72",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "No evidence of atrial fibrillation on initial presentation."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Further workup ordered to clarify clinical picture."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 3,
+          "text": "Assessment: pregnancy. Proceeding with management plan accordingly."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "broad_condition": "atrial fibrillation",
+        "narrow_condition": "pregnancy",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "D_pos_73",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient currently taking metformin."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Medication reconciliation: metformin was discontinued due to adverse reaction."
+        },
+        {
+          "agent_id": "pharmacy_agent",
+          "hop_index": 3,
+          "text": "Reviewing current medication list for renewal."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 4,
+          "text": "Recommend continuing metformin as previously prescribed."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "D",
+        "conflicting_hops": [
+          2,
+          4
+        ],
+        "drug": "metformin",
+        "relation": "stale_status_after_discontinuation"
+      }
+    },
+    {
+      "case_id": "D_neg_74",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient currently taking metformin."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Medication reconciliation: metformin was discontinued due to adverse reaction."
+        },
+        {
+          "agent_id": "pharmacy_agent",
+          "hop_index": 3,
+          "text": "Reviewing current medication list for renewal."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 4,
+          "text": "Recommend starting patient on vitamin D for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "drug": "metformin",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "D_pos_75",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient currently taking warfarin."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Medication reconciliation: warfarin was discontinued due to adverse reaction."
+        },
+        {
+          "agent_id": "pharmacy_agent",
+          "hop_index": 3,
+          "text": "Reviewing current medication list for renewal."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 4,
+          "text": "Recommend continuing warfarin as previously prescribed."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "D",
+        "conflicting_hops": [
+          2,
+          4
+        ],
+        "drug": "warfarin",
+        "relation": "stale_status_after_discontinuation"
+      }
+    },
+    {
+      "case_id": "D_neg_76",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient currently taking warfarin."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Medication reconciliation: warfarin was discontinued due to adverse reaction."
+        },
+        {
+          "agent_id": "pharmacy_agent",
+          "hop_index": 3,
+          "text": "Reviewing current medication list for renewal."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 4,
+          "text": "Recommend starting patient on vitamin D for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "drug": "warfarin",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "D_pos_77",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient currently taking lisinopril."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Medication reconciliation: lisinopril was discontinued due to adverse reaction."
+        },
+        {
+          "agent_id": "pharmacy_agent",
+          "hop_index": 3,
+          "text": "Reviewing current medication list for renewal."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 4,
+          "text": "Recommend continuing lisinopril as previously prescribed."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "D",
+        "conflicting_hops": [
+          2,
+          4
+        ],
+        "drug": "lisinopril",
+        "relation": "stale_status_after_discontinuation"
+      }
+    },
+    {
+      "case_id": "D_neg_78",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient currently taking lisinopril."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Medication reconciliation: lisinopril was discontinued due to adverse reaction."
+        },
+        {
+          "agent_id": "pharmacy_agent",
+          "hop_index": 3,
+          "text": "Reviewing current medication list for renewal."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 4,
+          "text": "Recommend starting patient on vitamin D for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "drug": "lisinopril",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "D_pos_79",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient currently taking simvastatin."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Medication reconciliation: simvastatin was discontinued due to adverse reaction."
+        },
+        {
+          "agent_id": "pharmacy_agent",
+          "hop_index": 3,
+          "text": "Reviewing current medication list for renewal."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 4,
+          "text": "Recommend continuing simvastatin as previously prescribed."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "D",
+        "conflicting_hops": [
+          2,
+          4
+        ],
+        "drug": "simvastatin",
+        "relation": "stale_status_after_discontinuation"
+      }
+    },
+    {
+      "case_id": "D_neg_80",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient currently taking simvastatin."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Medication reconciliation: simvastatin was discontinued due to adverse reaction."
+        },
+        {
+          "agent_id": "pharmacy_agent",
+          "hop_index": 3,
+          "text": "Reviewing current medication list for renewal."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 4,
+          "text": "Recommend starting patient on vitamin D for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "drug": "simvastatin",
+        "relation": null
+      }
+    },
+    {
+      "case_id": "D_pos_81",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient currently taking omeprazole."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Medication reconciliation: omeprazole was discontinued due to adverse reaction."
+        },
+        {
+          "agent_id": "pharmacy_agent",
+          "hop_index": 3,
+          "text": "Reviewing current medication list for renewal."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 4,
+          "text": "Recommend continuing omeprazole as previously prescribed."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": true,
+        "type": "D",
+        "conflicting_hops": [
+          2,
+          4
+        ],
+        "drug": "omeprazole",
+        "relation": "stale_status_after_discontinuation"
+      }
+    },
+    {
+      "case_id": "D_neg_82",
+      "hops": [
+        {
+          "agent_id": "triage_agent",
+          "hop_index": 1,
+          "text": "Patient currently taking omeprazole."
+        },
+        {
+          "agent_id": "diagnostic_agent",
+          "hop_index": 2,
+          "text": "Medication reconciliation: omeprazole was discontinued due to adverse reaction."
+        },
+        {
+          "agent_id": "pharmacy_agent",
+          "hop_index": 3,
+          "text": "Reviewing current medication list for renewal."
+        },
+        {
+          "agent_id": "treatment_agent",
+          "hop_index": 4,
+          "text": "Recommend starting patient on vitamin D for symptom management."
+        }
+      ],
+      "ground_truth": {
+        "contradiction_present": false,
+        "type": null,
+        "conflicting_hops": [],
+        "drug": "omeprazole",
+        "relation": null
+      }
+    }
+  ],
+  "mining_report": {
+    "kidney disease": {
+      "contraindicated_drugs_found": 5,
+      "child_concepts_mined": 1,
+      "note": "Type C pairs still need a real clinician spot-check before final submission \u2014 this is raw mined data, not independently verified."
+    },
+    "type 2 diabetes mellitus": {
+      "contraindicated_drugs_found": 1,
+      "child_concepts_mined": 0,
+      "note": "Type C pairs still need a real clinician spot-check before final submission \u2014 this is raw mined data, not independently verified."
+    },
+    "congestive heart failure": {
+      "contraindicated_drugs_found": 3,
+      "child_concepts_mined": 2,
+      "note": "Type C pairs still need a real clinician spot-check before final submission \u2014 this is raw mined data, not independently verified."
+    },
+    "hypertension": {
+      "contraindicated_drugs_found": 5,
+      "child_concepts_mined": 1,
+      "note": "Type C pairs still need a real clinician spot-check before final submission \u2014 this is raw mined data, not independently verified."
+    },
+    "asthma": {
+      "contraindicated_drugs_found": 5,
+      "child_concepts_mined": 0,
+      "note": "Type C pairs still need a real clinician spot-check before final submission \u2014 this is raw mined data, not independently verified."
+    },
+    "peptic ulcer disease": {
+      "contraindicated_drugs_found": 5,
+      "child_concepts_mined": 2,
+      "note": "Type C pairs still need a real clinician spot-check before final submission \u2014 this is raw mined data, not independently verified."
+    },
+    "liver cirrhosis": {
+      "contraindicated_drugs_found": 5,
+      "child_concepts_mined": 0,
+      "note": "Type C pairs still need a real clinician spot-check before final submission \u2014 this is raw mined data, not independently verified."
+    },
+    "pregnancy": {
+      "contraindicated_drugs_found": 5,
+      "child_concepts_mined": 0,
+      "note": "Type C pairs still need a real clinician spot-check before final submission \u2014 this is raw mined data, not independently verified."
+    },
+    "chronic obstructive pulmonary disease": {
+      "contraindicated_drugs_found": 5,
+      "child_concepts_mined": 2,
+      "note": "Type C pairs still need a real clinician spot-check before final submission \u2014 this is raw mined data, not independently verified."
+    },
+    "epilepsy": {
+      "contraindicated_drugs_found": 5,
+      "child_concepts_mined": 1,
+      "note": "Type C pairs still need a real clinician spot-check before final submission \u2014 this is raw mined data, not independently verified."
+    },
+    "gout": {
+      "contraindicated_drugs_found": 1,
+      "child_concepts_mined": 2,
+      "note": "Type C pairs still need a real clinician spot-check before final submission \u2014 this is raw mined data, not independently verified."
+    },
+    "migraine": {
+      "contraindicated_drugs_found": 4,
+      "child_concepts_mined": 1,
+      "note": "Type C pairs still need a real clinician spot-check before final submission \u2014 this is raw mined data, not independently verified."
+    },
+    "depression": {
+      "contraindicated_drugs_found": 1,
+      "child_concepts_mined": 0,
+      "note": "Type C pairs still need a real clinician spot-check before final submission \u2014 this is raw mined data, not independently verified."
+    },
+    "osteoporosis": {
+      "contraindicated_drugs_found": 4,
+      "child_concepts_mined": 0,
+      "note": "Type C pairs still need a real clinician spot-check before final submission \u2014 this is raw mined data, not independently verified."
+    },
+    "hypothyroidism": {
+      "contraindicated_drugs_found": 0,
+      "child_concepts_mined": 1,
+      "note": "Type C pairs still need a real clinician spot-check before final submission \u2014 this is raw mined data, not independently verified."
+    },
+    "atrial fibrillation": {
+      "contraindicated_drugs_found": 5,
+      "child_concepts_mined": 0,
+      "note": "Type C pairs still need a real clinician spot-check before final submission \u2014 this is raw mined data, not independently verified."
+    }
+  }
+}

@@ -1,0 +1,869 @@
+{
+  "summary": {
+    "tp": 45,
+    "fn": 0,
+    "fp": 0,
+    "tn": 37,
+    "catch_rate": 1.0,
+    "fp_rate": 0.0
+  },
+  "detailed": [
+    {
+      "case_id": "B_pos_1",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 2,
+      "expected_type": "B",
+      "detected_types": [
+        "B",
+        "B"
+      ]
+    },
+    {
+      "case_id": "B_pos_2",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 2,
+      "expected_type": "B",
+      "detected_types": [
+        "B",
+        "B"
+      ]
+    },
+    {
+      "case_id": "B_neg_3",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "C_pos_4",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 1,
+      "expected_type": "C",
+      "detected_types": [
+        "C"
+      ]
+    },
+    {
+      "case_id": "B_pos_5",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 2,
+      "expected_type": "B",
+      "detected_types": [
+        "B",
+        "B"
+      ]
+    },
+    {
+      "case_id": "B_neg_6",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "B_pos_7",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 2,
+      "expected_type": "B",
+      "detected_types": [
+        "B",
+        "B"
+      ]
+    },
+    {
+      "case_id": "B_pos_8",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 2,
+      "expected_type": "B",
+      "detected_types": [
+        "B",
+        "B"
+      ]
+    },
+    {
+      "case_id": "B_neg_9",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "C_pos_10",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 1,
+      "expected_type": "C",
+      "detected_types": [
+        "C"
+      ]
+    },
+    {
+      "case_id": "C_pos_11",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 2,
+      "expected_type": "C",
+      "detected_types": [
+        "C",
+        "D"
+      ]
+    },
+    {
+      "case_id": "B_pos_12",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 2,
+      "expected_type": "B",
+      "detected_types": [
+        "B",
+        "B"
+      ]
+    },
+    {
+      "case_id": "B_pos_13",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 2,
+      "expected_type": "B",
+      "detected_types": [
+        "B",
+        "B"
+      ]
+    },
+    {
+      "case_id": "B_neg_14",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "C_pos_15",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 1,
+      "expected_type": "C",
+      "detected_types": [
+        "C"
+      ]
+    },
+    {
+      "case_id": "B_pos_16",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 2,
+      "expected_type": "B",
+      "detected_types": [
+        "B",
+        "B"
+      ]
+    },
+    {
+      "case_id": "B_pos_17",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 2,
+      "expected_type": "B",
+      "detected_types": [
+        "B",
+        "B"
+      ]
+    },
+    {
+      "case_id": "B_neg_18",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "B_pos_19",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 2,
+      "expected_type": "B",
+      "detected_types": [
+        "B",
+        "B"
+      ]
+    },
+    {
+      "case_id": "B_pos_20",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 2,
+      "expected_type": "B",
+      "detected_types": [
+        "B",
+        "B"
+      ]
+    },
+    {
+      "case_id": "B_neg_21",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "C_pos_22",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 1,
+      "expected_type": "C",
+      "detected_types": [
+        "C"
+      ]
+    },
+    {
+      "case_id": "C_pos_23",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 1,
+      "expected_type": "C",
+      "detected_types": [
+        "C"
+      ]
+    },
+    {
+      "case_id": "B_pos_24",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 2,
+      "expected_type": "B",
+      "detected_types": [
+        "B",
+        "B"
+      ]
+    },
+    {
+      "case_id": "B_pos_25",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 2,
+      "expected_type": "B",
+      "detected_types": [
+        "B",
+        "B"
+      ]
+    },
+    {
+      "case_id": "B_neg_26",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "B_pos_27",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 2,
+      "expected_type": "B",
+      "detected_types": [
+        "B",
+        "B"
+      ]
+    },
+    {
+      "case_id": "B_pos_28",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 2,
+      "expected_type": "B",
+      "detected_types": [
+        "B",
+        "B"
+      ]
+    },
+    {
+      "case_id": "B_neg_29",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "B_pos_30",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 2,
+      "expected_type": "B",
+      "detected_types": [
+        "B",
+        "B"
+      ]
+    },
+    {
+      "case_id": "B_pos_31",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 2,
+      "expected_type": "B",
+      "detected_types": [
+        "B",
+        "B"
+      ]
+    },
+    {
+      "case_id": "B_neg_32",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "C_pos_33",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 1,
+      "expected_type": "C",
+      "detected_types": [
+        "C"
+      ]
+    },
+    {
+      "case_id": "C_pos_34",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 1,
+      "expected_type": "C",
+      "detected_types": [
+        "C"
+      ]
+    },
+    {
+      "case_id": "B_pos_35",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 2,
+      "expected_type": "B",
+      "detected_types": [
+        "B",
+        "B"
+      ]
+    },
+    {
+      "case_id": "B_pos_36",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 2,
+      "expected_type": "B",
+      "detected_types": [
+        "B",
+        "B"
+      ]
+    },
+    {
+      "case_id": "B_neg_37",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "C_pos_38",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 2,
+      "expected_type": "C",
+      "detected_types": [
+        "C",
+        "D"
+      ]
+    },
+    {
+      "case_id": "B_pos_39",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 2,
+      "expected_type": "B",
+      "detected_types": [
+        "B",
+        "B"
+      ]
+    },
+    {
+      "case_id": "B_neg_40",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "C_pos_41",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 1,
+      "expected_type": "C",
+      "detected_types": [
+        "C"
+      ]
+    },
+    {
+      "case_id": "C_pos_42",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 1,
+      "expected_type": "C",
+      "detected_types": [
+        "C"
+      ]
+    },
+    {
+      "case_id": "B_pos_43",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 2,
+      "expected_type": "B",
+      "detected_types": [
+        "B",
+        "B"
+      ]
+    },
+    {
+      "case_id": "B_pos_44",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 2,
+      "expected_type": "B",
+      "detected_types": [
+        "B",
+        "B"
+      ]
+    },
+    {
+      "case_id": "B_neg_45",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "C_pos_46",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 1,
+      "expected_type": "C",
+      "detected_types": [
+        "C"
+      ]
+    },
+    {
+      "case_id": "B_pos_47",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 2,
+      "expected_type": "B",
+      "detected_types": [
+        "B",
+        "B"
+      ]
+    },
+    {
+      "case_id": "B_neg_48",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "B_pos_49",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 2,
+      "expected_type": "B",
+      "detected_types": [
+        "B",
+        "B"
+      ]
+    },
+    {
+      "case_id": "B_pos_50",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 2,
+      "expected_type": "B",
+      "detected_types": [
+        "B",
+        "B"
+      ]
+    },
+    {
+      "case_id": "B_neg_51",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "B_neg_52",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "C_pos_53",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 1,
+      "expected_type": "C",
+      "detected_types": [
+        "C"
+      ]
+    },
+    {
+      "case_id": "B_pos_54",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 2,
+      "expected_type": "B",
+      "detected_types": [
+        "B",
+        "B"
+      ]
+    },
+    {
+      "case_id": "B_pos_55",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 2,
+      "expected_type": "B",
+      "detected_types": [
+        "B",
+        "B"
+      ]
+    },
+    {
+      "case_id": "B_neg_56",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "C_neg_57",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "C_neg_58",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "C_neg_59",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "C_neg_60",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "C_neg_61",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "C_neg_62",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "C_neg_63",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "C_neg_64",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "C_neg_65",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "C_neg_66",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "C_neg_67",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "C_neg_68",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "C_neg_69",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "C_neg_70",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "C_neg_71",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "C_neg_72",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "D_pos_73",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 1,
+      "expected_type": "D",
+      "detected_types": [
+        "D"
+      ]
+    },
+    {
+      "case_id": "D_neg_74",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "D_pos_75",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 1,
+      "expected_type": "D",
+      "detected_types": [
+        "D"
+      ]
+    },
+    {
+      "case_id": "D_neg_76",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "D_pos_77",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 1,
+      "expected_type": "D",
+      "detected_types": [
+        "D"
+      ]
+    },
+    {
+      "case_id": "D_neg_78",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "D_pos_79",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 1,
+      "expected_type": "D",
+      "detected_types": [
+        "D"
+      ]
+    },
+    {
+      "case_id": "D_neg_80",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    },
+    {
+      "case_id": "D_pos_81",
+      "expected": true,
+      "detected": true,
+      "status": "TP",
+      "n_results": 1,
+      "expected_type": "D",
+      "detected_types": [
+        "D"
+      ]
+    },
+    {
+      "case_id": "D_neg_82",
+      "expected": false,
+      "detected": false,
+      "status": "TN",
+      "n_results": 0,
+      "expected_type": null,
+      "detected_types": []
+    }
+  ]
+}

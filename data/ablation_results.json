@@ -1,0 +1,188 @@
+{
+  "benchmark_file": "benchmark_v0.json",
+  "n_positive_cases": 45,
+  "caught_by_baseline": 0,
+  "catch_rate": 0.0,
+  "detailed": [
+    {
+      "case_id": "B_pos_1",
+      "detected": false
+    },
+    {
+      "case_id": "B_pos_2",
+      "detected": false
+    },
+    {
+      "case_id": "C_pos_4",
+      "detected": false
+    },
+    {
+      "case_id": "B_pos_5",
+      "detected": false
+    },
+    {
+      "case_id": "B_pos_7",
+      "detected": false
+    },
+    {
+      "case_id": "B_pos_8",
+      "detected": false
+    },
+    {
+      "case_id": "C_pos_10",
+      "detected": false
+    },
+    {
+      "case_id": "C_pos_11",
+      "detected": false
+    },
+    {
+      "case_id": "B_pos_12",
+      "detected": false
+    },
+    {
+      "case_id": "B_pos_13",
+      "detected": false
+    },
+    {
+      "case_id": "C_pos_15",
+      "detected": false
+    },
+    {
+      "case_id": "B_pos_16",
+      "detected": false
+    },
+    {
+      "case_id": "B_pos_17",
+      "detected": false
+    },
+    {
+      "case_id": "B_pos_19",
+      "detected": false
+    },
+    {
+      "case_id": "B_pos_20",
+      "detected": false
+    },
+    {
+      "case_id": "C_pos_22",
+      "detected": false
+    },
+    {
+      "case_id": "C_pos_23",
+      "detected": false
+    },
+    {
+      "case_id": "B_pos_24",
+      "detected": false
+    },
+    {
+      "case_id": "B_pos_25",
+      "detected": false
+    },
+    {
+      "case_id": "B_pos_27",
+      "detected": false
+    },
+    {
+      "case_id": "B_pos_28",
+      "detected": false
+    },
+    {
+      "case_id": "B_pos_30",
+      "detected": false
+    },
+    {
+      "case_id": "B_pos_31",
+      "detected": false
+    },
+    {
+      "case_id": "C_pos_33",
+      "detected": false
+    },
+    {
+      "case_id": "C_pos_34",
+      "detected": false
+    },
+    {
+      "case_id": "B_pos_35",
+      "detected": false
+    },
+    {
+      "case_id": "B_pos_36",
+      "detected": false
+    },
+    {
+      "case_id": "C_pos_38",
+      "detected": false
+    },
+    {
+      "case_id": "B_pos_39",
+      "detected": false
+    },
+    {
+      "case_id": "C_pos_41",
+      "detected": false
+    },
+    {
+      "case_id": "C_pos_42",
+      "detected": false
+    },
+    {
+      "case_id": "B_pos_43",
+      "detected": false
+    },
+    {
+      "case_id": "B_pos_44",
+      "detected": false
+    },
+    {
+      "case_id": "C_pos_46",
+      "detected": false
+    },
+    {
+      "case_id": "B_pos_47",
+      "detected": false
+    },
+    {
+      "case_id": "B_pos_49",
+      "detected": false
+    },
+    {
+      "case_id": "B_pos_50",
+      "detected": false
+    },
+    {
+      "case_id": "C_pos_53",
+      "detected": false
+    },
+    {
+      "case_id": "B_pos_54",
+      "detected": false
+    },
+    {
+      "case_id": "B_pos_55",
+      "detected": false
+    },
+    {
+      "case_id": "D_pos_73",
+      "detected": false
+    },
+    {
+      "case_id": "D_pos_75",
+      "detected": false
+    },
+    {
+      "case_id": "D_pos_77",
+      "detected": false
+    },
+    {
+      "case_id": "D_pos_79",
+      "detected": false
+    },
+    {
+      "case_id": "D_pos_81",
+      "detected": false
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "session_id": "test_patient_001",
+  "assertions": [
+    {
+      "subject": "patient",
+      "predicate": "no_known_allergy",
+      "object_text": "known allergies",
+      "negated": true,
+      "agent_id": "triage_agent",
+      "hop_index": 1,
+      "ontology_code": "C0013182",
+      "ontology_name": "Drug Allergy",
+      "ontology_source": "MTH"
+    },
+    {
+      "subject": "patient",
+      "predicate": "has_condition",
+      "object_text": "type 2 diabetes mellitus",
+      "negated": false,
+      "agent_id": "triage_agent",
+      "hop_index": 1,
+      "ontology_code": "C0011860",
+      "ontology_name": "Diabetes Mellitus, Non-Insulin-Dependent",
+      "ontology_source": "MTH"
+    },
+    {
+      "subject": "patient",
+      "predicate": "takes_medication",
+      "object_text": "metformin",
+      "negated": false,
+      "agent_id": "diagnostic_agent",
+      "hop_index": 2,
+      "ontology_code": "C0025598",
+      "ontology_name": "metformin",
+      "ontology_source": "MTH"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+PINNED_CONDITIONS = {
+    "kidney disease": "C0022658",
+    "type 2 diabetes mellitus": "C0011860",
+    "congestive heart failure": "C0018802",
+    "hypertension": "C0020538",
+    "asthma": "C0004096",
+    "peptic ulcer disease": "C0030920",
+    "liver cirrhosis": "C0023895",
+    "pregnancy": "C0032961",
+    "chronic obstructive pulmonary disease": "C0024117",
+    "epilepsy": "C0014544",
+    "gout": "C0018099",
+    "migraine": "C0149931",
+    "depression": "C0011581",
+    "osteoporosis": "C0029456",
+    "hypothyroidism": "C0020676",
+    "atrial fibrillation": "C0004238",
+}

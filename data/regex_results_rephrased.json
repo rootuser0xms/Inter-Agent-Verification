@@ -1,0 +1,11 @@
+{
+  "benchmark_file": "benchmark_v0_rephrased.json",
+  "tp": 30,
+  "fn": 15,
+  "fp": 0,
+  "tn": 37,
+  "catch_rate": 0.6666666666666666,
+  "fp_rate": 0.0,
+  "hardcoded_type_b_pairs": 27,
+  "hardcoded_type_c_pairs": 13
+}
