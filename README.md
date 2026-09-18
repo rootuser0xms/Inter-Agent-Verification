@@ -1,5 +1,3 @@
-[![DOI](https://zenodo.org/badge/1375303902.svg)](https://doi.org/10.5281/zenodo.22822746)
-
 # Inter-Agent-Verification# Inter-Agent Consistency Verification
 
 **A semantic contradiction taxonomy and ontology-grounded verifier for
