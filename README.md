@@ -40,7 +40,7 @@ regex baseline, is in `tables/Table2.png`.
 
 ## The taxonomy
 
-See `figures/figure2_taxonomy.png` for the full breakdown.
+![Taxonomy](figures/figure2_taxonomy.png)
 
 ## Architecture
 
